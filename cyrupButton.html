@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>General Calculation Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="general_calculation.html">General Calculation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="professional_calculation.html">Professional Calculation</a>
+                        </li> 
+                    </ul>              
+              </div>
+            </div>
+          </nav>
+   
+    <h1 style="margin: 25px;"> Liquid/Cyrup</h1>
+    <div class="hello" style="background-color: rgb(103, 153, 105);">
+        
+        <form onsubmit="calculateCyrup(event); return false;" class="ge-cal">
+    <label for="desiredValue">Desired Value:</label>
+    <input type="text"   class="inp" id="desiredValue" placeholder="Enter desired value"><br>
+
+    <label for="inhandValue">Inhand Value:</label>
+    <input type="text" class="inp"  id="inhandValue" placeholder="Enter inhand value"><br>
+
+    <label for="quantity">Quantity:</label>
+    <input type="text" class="inp"  id="quantityValue" placeholder="Enter the quantity"><br>
+
+    <!-- <label for="outcome">Output:</label>
+    <input type="text" id="outcome1" placeholder="your dose"><br> -->
+
+    <!-- Add your calculation logic here -->
+    <input type="submit" value="Submit">
+</form>
+<div>
+    <p id="res"></p>
+</div>
+</div>
+<div><a target="_blank" href="https://www.unitconverters.net/weight-and-mass/lbs-to-kg.htm">Unit Converter</a></div>
+
+ <!-- Bootstrap JS Library -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+ <script src="JS/script.js"></script>   
+</body>
+</html>
